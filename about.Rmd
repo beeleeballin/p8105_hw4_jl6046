@@ -1,3 +1,69 @@
-A brief introductory landing page
-A page giving your academic and professional experience (i.e. a resume)
-Links in the site navigation for your GitHub account, your email, and other professional networks.
+---
+output:
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+## **EDUCATION**
+
+<img src="images/columbia.jpg" style="width:30%">\
+
+#### MS in **Biostatistics, Statistical Genetics Track**
+Expected Spring 2023
+
+Relevant Coursework: Biostatistical Methods I, Human Population Genetics, Data Science I
+
+<img src="images/vassar.png" style="width:7%">
+<img src="images/vassar_name.png" style="width:20%">\
+
+#### BA in **Biology**, Minor in **Computer Science**
+Fall 2020
+
+Relevant Coursework: Bioinformatics, Molecular Genetics, Software Design & Implementation
+
+<img src="images/yuan_pei.png" style="width:45%">\
+
+#### Yuan Pei Scholar
+Fall 2018                                                  
+
+Relevant Coursework: Statistical Genomics Analysis, Biochemical Pharmaceutics\
+\
+\
+\
+
+## **WORK EXPERIENCE**
+<img src="images/regeneron.png" style="width:35%">\
+
+#### Lab Assistant Protein Biochemistry Group
+Mar 2021 – Jun 2021\
+• Piloted a new sample management workflow; imported 30,000+ protein tubes into the BioBank to support company-wide studies\
+• Used ELNs, LIMS, BioRegistry, and more to perform sample management in a timely and responsible manner\
+• Aliquoted and distributed protein and AAV samples for the COVID-19, Ebola, RA and other antibody therapeutics programs\
+• Appointed as an immediate respondent for Protein Biochemistry for urgent needs during pandemic protocols
+
+<img src="images/vassar.png" style="width:7%">
+<img src="images/vassar_name.png" style="width:20%">\
+
+#### Student Researcher, Dr. J.H. Long’s Biomechanics Lab
+Sep 2019 – Dec 2020\
+• Senior thesis, Fluid Entrainment and Medusae Morphology Reveal Row Propulsion Proficiency\
+• Formulated mathematical models to explain the wake dynamics and foraging techniques found in scyphozoan locomotion\
+• Concluded and visualized findings using statsmodels, sklearn, matplotlib, and other analytic Python libraries\
+• Presented study in the Vassar Fall 2020 Life Sciences Poster Session; attended weekly meetings to discuss research progress
+
+#### Teaching Assistant, Computer Science III
+Sep 2020 – Dec 2020\
+•	Guided Computer Science III students under Dr. Saravanan\
+•	Designed and graded student assignments and lab work
+
+#### Student Researcher, Dr. J. Schwarz’s Marine Biology Lab
+Mar 2020 – May 2020\
+• Modeled the functional impact and likelihood of probable CDS mutations in Nemostella hsp70 gene using Python
+•	Compiled annotated orthologs from databases such as Swiss-Prot
+
+<img src="images/nchu.png" style="width:30%">\
+
+#### Research Assistant, Dr. M.C. Wu’s Bee Lab
+Feb 2019 – Jun 2019\
+•	Increased the mrjp1 gene expression in A. mellifera to enhance the nutritional richness of royal jelly by 35%, a lab record

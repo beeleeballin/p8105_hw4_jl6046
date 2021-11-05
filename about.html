@@ -29,6 +29,9 @@
        h6 {font-size: 12px;}
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -220,6 +223,69 @@ $(document).ready(function () {
 
 
 
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
 
 </head>
 
@@ -227,6 +293,16 @@ $(document).ready(function () {
 
 
 <div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -243,13 +319,12 @@ $(document).ready(function () {
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-        
+        <li>
+  <a href="about.html">Resume</a>
+</li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="about.html">About</a>
-</li>
-<li>
   <a href="mailto:&lt;johsuan.lee@columbia.edu&gt;">
     <span class="fa fa-envelope fa-lg"></span>
      
@@ -263,7 +338,19 @@ $(document).ready(function () {
 </li>
 <li>
   <a href="https://www.linkedin.com/in/brian-johsuan-lee/">
-    <span class="fa fa-linkedin"></span>
+    <span class="fa fa-linkedin fa-lg"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://goo.gl/maps/kyKVwUbubgvP3u6s8">
+    <span class="fa fa-map-marker fa-lg"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://www.instagram.com/brian_lee0303/">
+    <span class="fa fa-instagram fa-lg"></span>
      
   </a>
 </li>
@@ -280,10 +367,80 @@ $(document).ready(function () {
 </div>
 
 
-<p>A brief introductory landing page A page giving your academic and professional experience (i.e. a resume) Links in the site navigation for your GitHub account, your email, and other professional networks.</p>
+<div id="education" class="section level2">
+<h2><strong>EDUCATION</strong></h2>
+<p><img src="images/columbia.jpg" style="width:30%"><br />
+</p>
+<div id="ms-in-biostatistics-statistical-genetics-track" class="section level4">
+<h4>MS in <strong>Biostatistics, Statistical Genetics Track</strong></h4>
+<p>Expected Spring 2023</p>
+<p>Relevant Coursework: Biostatistical Methods I, Human Population Genetics, Data Science I</p>
+<p><img src="images/vassar.png" style="width:7%"> <img src="images/vassar_name.png" style="width:20%"><br />
+</p>
+</div>
+<div id="ba-in-biology-minor-in-computer-science" class="section level4">
+<h4>BA in <strong>Biology</strong>, Minor in <strong>Computer Science</strong></h4>
+<p>Fall 2020</p>
+<p>Relevant Coursework: Bioinformatics, Molecular Genetics, Software Design &amp; Implementation</p>
+<p><img src="images/yuan_pei.png" style="width:45%"><br />
+</p>
+</div>
+<div id="yuan-pei-scholar" class="section level4">
+<h4>Yuan Pei Scholar</h4>
+<p>Fall 2018</p>
+<p>Relevant Coursework: Statistical Genomics Analysis, Biochemical Pharmaceutics<br />
+<br />
+<br />
+<br />
+</p>
+</div>
+</div>
+<div id="work-experience" class="section level2">
+<h2><strong>WORK EXPERIENCE</strong></h2>
+<p><img src="images/regeneron.png" style="width:35%"><br />
+</p>
+<div id="lab-assistant-protein-biochemistry-group" class="section level4">
+<h4>Lab Assistant Protein Biochemistry Group</h4>
+<p>Mar 2021 – Jun 2021<br />
+• Piloted a new sample management workflow; imported 30,000+ protein tubes into the BioBank to support company-wide studies<br />
+• Used ELNs, LIMS, BioRegistry, and more to perform sample management in a timely and responsible manner<br />
+• Aliquoted and distributed protein and AAV samples for the COVID-19, Ebola, RA and other antibody therapeutics programs<br />
+• Appointed as an immediate respondent for Protein Biochemistry for urgent needs during pandemic protocols</p>
+<p><img src="images/vassar.png" style="width:7%"> <img src="images/vassar_name.png" style="width:20%"><br />
+</p>
+</div>
+<div id="student-researcher-dr.-j.h.-longs-biomechanics-lab" class="section level4">
+<h4>Student Researcher, Dr. J.H. Long’s Biomechanics Lab</h4>
+<p>Sep 2019 – Dec 2020<br />
+• Senior thesis, Fluid Entrainment and Medusae Morphology Reveal Row Propulsion Proficiency<br />
+• Formulated mathematical models to explain the wake dynamics and foraging techniques found in scyphozoan locomotion<br />
+• Concluded and visualized findings using statsmodels, sklearn, matplotlib, and other analytic Python libraries<br />
+• Presented study in the Vassar Fall 2020 Life Sciences Poster Session; attended weekly meetings to discuss research progress</p>
+</div>
+<div id="teaching-assistant-computer-science-iii" class="section level4">
+<h4>Teaching Assistant, Computer Science III</h4>
+<p>Sep 2020 – Dec 2020<br />
+• Guided Computer Science III students under Dr. Saravanan<br />
+• Designed and graded student assignments and lab work</p>
+</div>
+<div id="student-researcher-dr.-j.-schwarzs-marine-biology-lab" class="section level4">
+<h4>Student Researcher, Dr. J. Schwarz’s Marine Biology Lab</h4>
+<p>Mar 2020 – May 2020<br />
+• Modeled the functional impact and likelihood of probable CDS mutations in Nemostella hsp70 gene using Python • Compiled annotated orthologs from databases such as Swiss-Prot</p>
+<p><img src="images/nchu.png" style="width:30%"><br />
+</p>
+</div>
+<div id="research-assistant-dr.-m.c.-wus-bee-lab" class="section level4">
+<h4>Research Assistant, Dr. M.C. Wu’s Bee Lab</h4>
+<p>Feb 2019 – Jun 2019<br />
+• Increased the mrjp1 gene expression in A. mellifera to enhance the nutritional richness of royal jelly by 35%, a lab record</p>
+</div>
+</div>
 
 
 
+</div>
+</div>
 
 </div>
 
@@ -316,6 +473,35 @@ $(document).ready(function () {
 
 <!-- code folding -->
 
+<script>
+$(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
