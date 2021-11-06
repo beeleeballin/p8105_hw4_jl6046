@@ -10,7 +10,7 @@ output:
 <img src="images/columbia.jpg" style="width:30%">\
 
 #### MS in **Biostatistics, Statistical Genetics Track**
-Expected Spring 2023
+**Expected Spring 2023**
 
 Relevant Coursework: Biostatistical Methods I, Human Population Genetics, Data Science I
 
@@ -18,14 +18,14 @@ Relevant Coursework: Biostatistical Methods I, Human Population Genetics, Data S
 <img src="images/vassar_name.png" style="width:20%">\
 
 #### BA in **Biology**, Minor in **Computer Science**
-Fall 2020
+**Fall 2020**
 
 Relevant Coursework: Bioinformatics, Molecular Genetics, Software Design & Implementation
 
 <img src="images/yuan_pei.png" style="width:45%">\
 
 #### Yuan Pei Scholar
-Fall 2018                                                  
+**Fall 2018**                                               
 
 Relevant Coursework: Statistical Genomics Analysis, Biochemical Pharmaceutics\
 \
@@ -35,7 +35,7 @@ Relevant Coursework: Statistical Genomics Analysis, Biochemical Pharmaceutics\
 ## **WORK EXPERIENCE**
 <img src="images/regeneron.png" style="width:35%">\
 
-#### Lab Assistant Protein Biochemistry Group
+#### Lab Assistant, Protein Biochemistry Group
 Mar 2021 – Jun 2021\
 • Piloted a new sample management workflow; imported 30,000+ protein tubes into the BioBank to support company-wide studies\
 • Used ELNs, LIMS, BioRegistry, and more to perform sample management in a timely and responsible manner\
@@ -66,4 +66,33 @@ Mar 2020 – May 2020\
 
 #### Research Assistant, Dr. M.C. Wu’s Bee Lab
 Feb 2019 – Jun 2019\
-•	Increased the mrjp1 gene expression in A. mellifera to enhance the nutritional richness of royal jelly by 35%, a lab record
+•	Increased the mrjp1 gene expression in A. mellifera to enhance the nutritional richness of royal jelly by 35%, a lab record\
+\
+\
+\
+
+## **SKILLS**
+#### Computational
+**R / Python / Unit testing / BLAST / SSH**
+
+#### Wet Laboratory
+**CRISPR / Gene cloning / qPCR / SDS-PAGE / ELISA**
+
+#### Spoken Language
+**Mandarin Chinese**\
+\
+\
+\
+
+## **HONORS & AWARDS**
+#### 2021
+**The Dorothy Evans Fellowship**\
+**The Virginia Swinburne Brownell Prize in Biology**\
+
+#### 2019
+**Vassar Internship Grant Fund**\
+
+#### 2017
+**Tri-State Collegiate Rugby Champion**
+
+
