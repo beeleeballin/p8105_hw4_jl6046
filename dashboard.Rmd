@@ -1,0 +1,90 @@
+---
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+    source_code: embed
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(plotly)
+library(flexdashboard)
+```
+
+Load and clean data
+```{r}
+weather_df = 
+  rnoaa::meteo_pull_monitors(
+    c("USW00094728", "USC00519397", "USS0023B17S"),
+    var = c("PRCP", "TMIN", "TMAX"), 
+    date_min = "2017-01-01",
+    date_max = "2017-12-31") %>%
+  mutate(
+    name = recode(
+      id, 
+      USW00094728 = "CentralPark_NY", 
+      USC00519397 = "Waikiki_HA",
+      USS0023B17S = "Waterhole_WA"),
+    tmin = tmin / 10,
+    tmax = tmax / 10) %>%
+  select(name, id, everything())
+```
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A
+
+```{r}
+weather_df %>% 
+  mutate(
+    text_label = str_c("Temperture Range: ", tmin, " ~ ", tmax, " C\nPrecipitation: ", prcp, " mm")
+  ) %>%
+  plot_ly(
+    x = ~date, y = ~tmax, type = "scatter", mode = "markers", size = ~prcp,
+    color = ~name, text = ~text_label, alpha = .5, colors = "viridis"
+  ) %>% 
+  layout(title = 'Annual Weather Data',
+         xaxis = list(title = 'Date', zeroline = FALSE),
+         yaxis = list(title = 'Max Temperature (C)', zeroline = FALSE)
+  )
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r}
+weather_df %>%
+  arrange(date) %>% 
+  slice(178:453) %>% 
+  plot_ly(
+    x = ~name, y = ~prcp, type = "violin", color = ~name, colors = "viridis"
+  )%>% 
+  layout(title = 'Spring Precipitation Across 3 Cities',
+         xaxis = list(title = 'Cities'),
+         yaxis = list(title = 'Precipitation (mm)', zeroline = FALSE),
+         legend = list(orientation = 'h')
+  )
+```
+
+### Chart C
+
+```{r}
+weather_df %>% 
+  arrange(date) %>% 
+  slice(454:729) %>% 
+  mutate(
+    text_label = str_c("Temperture Range: ", tmin, " ~ ", tmax, " C\nPrecipitation: ", prcp, " mm")
+  ) %>%
+  plot_ly(
+    x = ~date, y = ~prcp, color = ~name, type = "bar", text = ~text_label, colors = "viridis"
+    )%>% 
+  layout(title = 'Daily Precipitation Across 3 Cities in Summer',
+         xaxis = list(title = 'Date'),
+         yaxis = list(title = 'Precipitation (mm)'),
+         legend = list(orientation = 'h')
+  )
+```
