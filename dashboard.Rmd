@@ -89,5 +89,3 @@ weather_df %>%
   )
 ```
 
-rmarkdown::render("dashboard.Rmd", output_format = "flexdashboard::flex_dashboard")
-
