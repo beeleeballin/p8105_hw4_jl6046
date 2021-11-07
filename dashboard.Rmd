@@ -31,7 +31,7 @@ weather_df =
   select(name, id, everything())
 ```
 
-Column {data-width=650}
+Column {data-width=500}
 -----------------------------------------------------------------------
 
 ### Chart A
@@ -51,7 +51,7 @@ weather_df %>%
   )
 ```
 
-Column {data-width=350}
+Column {data-width=500}
 -----------------------------------------------------------------------
 
 ### Chart B
@@ -88,3 +88,6 @@ weather_df %>%
          legend = list(orientation = 'h')
   )
 ```
+
+rmarkdown::render("dashboard.Rmd", output_format = "flexdashboard::flex_dashboard")
+
