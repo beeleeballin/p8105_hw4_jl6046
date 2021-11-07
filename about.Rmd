@@ -7,7 +7,7 @@ output:
 
 ## **EDUCATION**
 
-<img src="images/columbia.jpg" style="width:30%">\
+<img src="images/columbia.png" style="width:30%">\
 
 #### MS in **Biostatistics, Statistical Genetics Track**
 **Expected Spring 2023**
